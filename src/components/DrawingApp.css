@@ -20,7 +20,7 @@
   .drawing-area {
     display: grid;
     grid-template-columns: repeat(20, 20px);
-    gap: 1px;
+   
   }
   
   .drawing-cell {
