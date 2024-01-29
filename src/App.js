@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Cards from './components/cards';
 import MemoryGame1 from './components/MemoryGame1';
 import MemoryGame2 from './components/MemoryGame2';
+import AdditionalActivity from './components/AdditionalActivity';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Cards />} />
             <Route path="/game1" element={<MemoryGame1 />} />
             <Route path="/game2" element={<MemoryGame2 />} />
+            <Route path="/game3" element={<AdditionalActivity/>}/>
           </Routes>
         </div>
       </div>

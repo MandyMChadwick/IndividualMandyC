@@ -11,6 +11,9 @@ function Navbar() {
         <Link to="/game1" className="navbar-brand">Memory Game 1</Link>
         <br></br>
         <Link to="/game2" className="navbar-brand">Memory Game 2</Link>
+        <br></br>
+       
+        <Link to="/game3" className="navbar-brand">Additional Activity</Link>
       </div>
     </nav>
   );

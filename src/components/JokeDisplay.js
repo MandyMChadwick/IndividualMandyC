@@ -1,9 +1,8 @@
-
-// MemoryGame1.js
+// JokeDisplay.js
 import React, { useState } from 'react';
 import dadJokes from './dadJokes.json'; // Adjust the import path based on your project structure
 
-const MemoryGame1 = () => {
+const JokeDisplay = () => {
   const [currentJoke, setCurrentJoke] = useState({});
   const [showAnswer, setShowAnswer] = useState(false);
 
@@ -31,4 +30,4 @@ const MemoryGame1 = () => {
   );
 };
 
-export default MemoryGame1;
+export default JokeDisplay;
