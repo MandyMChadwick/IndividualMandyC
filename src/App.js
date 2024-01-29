@@ -8,16 +8,18 @@ import MemoryGame2 from './components/MemoryGame2';
 function App() {
   return (
     <Router>
-      <div className="App">
-        <div className="title-container">
-          <h1>Minding Babies</h1>
-        </div>
+      <div className="container">
         <Navbar />
-        <Routes>  {/* Update this line */}
-        <Route path="/" element={<Cards />} />
-          <Route path="/game1" element={<MemoryGame1 />} />
-          <Route path="/game2" element={<MemoryGame2 />} />
-        </Routes>  {/* Update this line */}
+        <div className="content">
+          <div className="title-container">
+            <h1>Minding Babies</h1>
+          </div>
+          <Routes>
+            <Route path="/" element={<Cards />} />
+            <Route path="/game1" element={<MemoryGame1 />} />
+            <Route path="/game2" element={<MemoryGame2 />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
