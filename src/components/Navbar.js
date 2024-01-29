@@ -6,11 +6,11 @@ function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">Home</Link>
+        <Link to="/" className="navbar-brand">Memory Game</Link>
         <br></br>
-        <Link to="/game1" className="navbar-brand">Memory Game 1</Link>
+        <Link to="/game1" className="navbar-brand">Dad Jokes</Link>
         <br></br>
-        <Link to="/game2" className="navbar-brand">Memory Game 2</Link>
+        <Link to="/game2" className="navbar-brand">Game 2</Link>
         <br></br>
        
         <Link to="/game3" className="navbar-brand">Additional Activity</Link>
