@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <div className="content">
           <div className="title-container">
-            <h1>Minding Babies</h1>
+            <h1>Fun With Mom and Dad</h1>
           </div>
           <Routes>
             <Route path="/" element={<Cards />} />
