@@ -10,10 +10,10 @@ function Navbar() {
         <br></br>
         <Link to="/game1" className="navbar-brand">Dad Jokes</Link>
         <br></br>
-        <Link to="/game2" className="navbar-brand">Game 2</Link>
+        <Link to="/game2" className="navbar-brand">Drawing Place</Link>
         <br></br>
        
-        <Link to="/game3" className="navbar-brand">Additional Activity</Link>
+        <Link to="/game3" className="navbar-brand">Nursery Rhymes</Link>
       </div>
     </nav>
   );

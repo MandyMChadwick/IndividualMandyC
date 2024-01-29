@@ -6,6 +6,7 @@ import MemoryGame1 from './components/MemoryGame1';
 import MemoryGame2 from './components/MemoryGame2';
 import AdditionalActivity from './components/AdditionalActivity';
 import NurseryRhymeDisplay from './components/NurseryRhymeDisplay';
+import DrawingApp from './components/DrawingApp';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Cards />} />
             <Route path="/game1" element={<MemoryGame1 />} />
-            <Route path="/game2" element={<MemoryGame2 />} />
+            <Route path="/game2" element={<DrawingApp />} />
             <Route path="/game3" element={<NurseryRhymeDisplay/>}/>
           </Routes>
         </div>
