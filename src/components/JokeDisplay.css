@@ -1,0 +1,41 @@
+/* JokeDisplay.css */
+#joke-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #joke-title {
+    color: #3498db;
+  }
+  
+  #get-joke-button,
+  #reveal-answer-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  #get-joke-button:hover,
+  #reveal-answer-button:hover {
+    background-color: #2980b9;
+  }
+  
+  #joke-setup {
+    font-size: 18px;
+  }
+  
+  #joke-punchline {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

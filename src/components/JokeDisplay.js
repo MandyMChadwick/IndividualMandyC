@@ -1,6 +1,7 @@
 // JokeDisplay.js
 import React, { useState } from 'react';
 import dadJokes from './dadJokes.json'; // Adjust the import path based on your project structure
+import './JokeDisplay.css'; // Adjust the import path based on your project structure
 
 const JokeDisplay = () => {
   const [currentJoke, setCurrentJoke] = useState({});
@@ -18,14 +19,16 @@ const JokeDisplay = () => {
   };
 
   return (
-    <div>
-      <h2>Dad Joke:</h2>
-      <p>{currentJoke.setup}</p>
-      <button onClick={getRandomJoke}>Get Another Joke</button>
-      <button onClick={revealAnswer} disabled={!currentJoke.setup || showAnswer}>
+    <div id="joke-container">
+      <h2 id="joke-title">Dad Joke:</h2>
+      <p id="joke-setup">{currentJoke.setup}</p>
+      <button id="get-joke-button" onClick={getRandomJoke}>
+        Get Another Joke
+      </button>
+      <button id="reveal-answer-button" onClick={revealAnswer} disabled={!currentJoke.setup || showAnswer}>
         Reveal Answer
       </button>
-      {showAnswer && <p>{currentJoke.punchline}</p>}
+      {showAnswer && <p id="joke-punchline">{currentJoke.punchline}</p>}
     </div>
   );
 };
