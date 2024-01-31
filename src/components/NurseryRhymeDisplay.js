@@ -1,5 +1,7 @@
+// NurseryRhymeDisplay.jsx
 import React, { useState } from 'react';
-import nurseryRhymes from './nurseryRhymns.json'; // Adjust the import path based on your project structure
+import nurseryRhymes from './nurseryRhymns.json';
+import './NurseryRhymeDisplay.css'; // Adjust the import path based on your project structure
 
 const NurseryRhymeDisplay = () => {
   const [currentRhyme, setCurrentRhyme] = useState({});
@@ -11,13 +13,15 @@ const NurseryRhymeDisplay = () => {
   };
 
   return (
-    <div>
-      <h2>Nursery Rhyme Display</h2>
-      <button onClick={getRandomRhyme}>Get Random Rhyme</button>
+    <div id="nursery-container">
+      <h2 id="rhyme-title">Nursery Rhyme Display</h2>
+      <button id="random-button" onClick={getRandomRhyme}>
+        Get Random Rhyme
+      </button>
       {currentRhyme && (
-        <div>
-          <h3>{currentRhyme.title}</h3>
-          <p>{currentRhyme.lyrics}</p>
+        <div id="rhyme-details">
+          <h3 id="rhyme-title">{currentRhyme.title}</h3>
+          <p id="rhyme-lyrics">{currentRhyme.lyrics}</p>
         </div>
       )}
     </div>

@@ -1,0 +1,39 @@
+/* NurseryRhymeDisplay.css */
+#nursery-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #rhyme-title {
+    color: #3498db;
+  }
+  
+  #random-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  #random-button:hover {
+    background-color: #2980b9;
+  }
+  
+  #rhyme-details {
+    margin-top: 20px;
+  }
+  
+  #rhyme-lyrics {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
