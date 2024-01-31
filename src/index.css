@@ -12,7 +12,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #fae19d;
-  display: flex;
+  
 }
 
 
@@ -39,6 +39,12 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: (1fr);
+  gap: 1em;
+}
+.containerB {
+  display: grid;
+  grid-template-columns: ( 1fr);
   grid-template-rows: (1fr);
   gap: 1em;
 }

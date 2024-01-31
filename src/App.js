@@ -14,7 +14,7 @@ import './components/Navbar.css';
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="containerB">
         <Navbar />
         <div className="content">
           <div className="title-container">
