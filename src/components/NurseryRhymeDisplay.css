@@ -29,6 +29,8 @@
   
   #rhyme-details {
     margin-top: 20px;
+    width:20em;
+    text-align: center;
   }
   
   #rhyme-lyrics {
