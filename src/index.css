@@ -39,7 +39,7 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: (1fr);
   gap: 1em;
 }
 
@@ -52,7 +52,8 @@ h1 {
   transform: rotateY(180deg);
   animation: 2s hideCard linear;
   transition: transform 0.5s;
-  width: 100%; /* Card takes up the full width of the grid cell */
+  width: 75px; 
+  height: 75px; /* Set a fixed height for the card  /* Card takes up the full width of the grid cell */
 }
 
 @keyframes hideCard {
