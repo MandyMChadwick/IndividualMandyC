@@ -9,6 +9,8 @@ import NurseryRhymeDisplay from './components/NurseryRhymeDisplay';
 import DrawingApp from './components/DrawingApp';
 import JokeDisplay from './components/JokeDisplay';
 
+import './components/Navbar.css';
+
 function App() {
   return (
     <Router>
@@ -16,6 +18,8 @@ function App() {
         <Navbar />
         <div className="content">
           <div className="title-container">
+            <br></br>
+            <br></br>
             <h1>Fun With Mom and Dad</h1>
           </div>
           <Routes>

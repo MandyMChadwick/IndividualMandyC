@@ -1,19 +1,19 @@
-// components/Navbar.js
+// Navbar.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-dark bg-dark">
-      <div className="container-fluid">
-        <Link to="/" className="navbar-brand">Memory Game</Link>
-        <br></br>
-        <Link to="/game1" className="navbar-brand">Dad Jokes</Link>
-        <br></br>
-        <Link to="/game2" className="navbar-brand">Drawing Place</Link>
-        <br></br>
-       
-        <Link to="/game3" className="navbar-brand">Nursery Rhymes</Link>
+    <nav id="main-navbar">
+      <div id="navbar-container">
+        <Link to="/" id="brand-link">Memory Game</Link>
+        <br />
+        <Link to="/game1" id="game1-link">Dad Jokes</Link>
+        <br />
+        <Link to="/game2" id="game2-link">Drawing Place</Link>
+        <br />
+        <Link to="/game3" id="game3-link">Nursery Rhymes</Link>
       </div>
     </nav>
   );
