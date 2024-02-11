@@ -1,8 +1,10 @@
-* {
+* 
+
+{
   margin: 0;
   padding: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 html,
 body {
   height: 100%;
@@ -11,8 +13,9 @@ body {
 
 
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  
+    font-family: 'Bubblegum Sans', cursive;
+  
   background-color: #FCF3C3ff;
   
 }
