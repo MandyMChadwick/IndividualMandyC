@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Card from './card'; // Adjust the import path based on your project structure
+import './cards.css'
 
 function shuffle(array) {
   let currentIndex = array.length;
@@ -79,9 +80,10 @@ function Cards() {
         {items.map((item, index) => (
           <Card key={index} item={item} id={index} handleClick={handleClick} />
         ))}
-        <div className="restart-button">
-          <button onClick={restartGame}>Restart</button>
-        </div>
+        
+        <button className="restart-button" onClick={restartGame}>Restart</button>
+        
+    
       </div>
     </div>
   );
