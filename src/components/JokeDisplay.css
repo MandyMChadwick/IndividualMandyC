@@ -8,7 +8,7 @@
   }
   
   #joke-title {
-    color: #3498db;
+    color: #555;
   }
   
   #get-joke-button,
@@ -38,4 +38,7 @@
     margin-top: 10px;
     font-weight: bold;
   }
-  
+  .dad-jokes-title
+  {
+    color: red;
+  }

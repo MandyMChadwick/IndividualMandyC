@@ -5,22 +5,21 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div className="home-page">
-      <Link to="/memoryGame" className="card memory-game">
-        <img src="/path-to-memory-game-image.jpg" alt="Memory Game" />
-        <p>Memory Game</p>
+    <div className="home-links">
+      <Link to="/memoryGame">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQsN2l67ybcWC-lPIjYK6WEIXqsrZpiwDRBimD9Yx1EC-WRQ7wv7x7S3Az-LZWoJ0JxRHoFYg66TaoJIL4cFdyTLcth=s2560" alt="Memory Game" className="home-image" />
+        
       </Link>
-      <Link to="/game1" className="card dad-jokes">
-        <img src="/path-to-dad-jokes-image.jpg" alt="Dad Jokes" />
-        <p>Dad Jokes</p>
+      <Link to="/game1">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQm-VuQouW7AmiSHPtg6JMDUzHsyyvSkKIxaQIBrgeqrsu5TvRT82yp6OJMI6xFHPzPDIl93ntqgZhD6lMHIfE9QqlT=s2560" alt="Dad Jokes" className="home-image" />
       </Link>
-      <Link to="/game2" className="card drawing">
-        <img src="/path-to-drawing-image.jpg" alt="Drawing" />
-        <p>Drawing</p>
+      <Link to="/game2">
+        <img src=" https://lh3.googleusercontent.com/drive-viewer/AEYmBYSp_slmcz8IEt3o0-c-KodyN_jsIpXGBhOhNj81boh9gG0v8fdKAQhLb0AcjabtxT-Mm0emaqqScCFtj-4lE6h18iDdUQ=s2560
+     " alt="Drawing" className="home-image" />
+       
       </Link>
-      <Link to="/game3" className="card nursery-rhymes">
-        <img src="/path-to-nursery-rhymes-image.jpg" alt="Nursery Rhymes" />
-        <p>Nursery Rhymes</p>
+      <Link to="/game3">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRhoExaCv6IvuVsUqzr0Fkwi5whwrN-mPSuEx2YmaDyPl0777IzdhF6cDiW8zB_frPZ79yszCrMVwbWIEEnk2P2fHE-=s2560" alt="Drawing" className="home-image" alt="Nursery Rhymes" className="home-image" />
       </Link>
     </div>
   );
