@@ -18,7 +18,7 @@ function App() {
       
         <div className="content">
           <div className="title-container">
-            <br></br>
+            
             <br></br>
             <h1>Fun With Mom and Dad</h1>
           </div>
