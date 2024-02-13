@@ -16,7 +16,7 @@ const NurseryRhymeDisplay = () => {
     <div id="nursery-container">
       <h2 id="rhyme-title">Nursery Rhyme Display</h2>
       <button id="random-button" onClick={getRandomRhyme}>
-        Get Random Rhyme
+        Get A Rhyme
       </button>
       {currentRhyme && (
         <div id="rhyme-details">

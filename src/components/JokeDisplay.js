@@ -23,7 +23,7 @@ const JokeDisplay = () => {
       <h2 id="joke-title">Dad Joke:</h2>
       <p id="joke-setup">{currentJoke.setup}</p>
       <button id="get-joke-button" onClick={getRandomJoke}>
-        Get Another Joke
+        Get A Joke
       </button>
       <button id="reveal-answer-button" onClick={revealAnswer} disabled={!currentJoke.setup || showAnswer}>
         Reveal Answer
