@@ -1,7 +1,6 @@
-// NurseryRhymeDisplay.jsx
 import React, { useState } from 'react';
 import nurseryRhymes from './nurseryRhymns.json';
-import './NurseryRhymeDisplay.css'; // Adjust the import path based on your project structure
+import './NurseryRhymeDisplay.css'; 
 
 const NurseryRhymeDisplay = () => {
   const [currentRhyme, setCurrentRhyme] = useState({});

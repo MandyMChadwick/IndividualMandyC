@@ -10,17 +10,29 @@ const DrawingApp = () => {
     setSelectedColor(color);
   };
 
-  const handleMouseDown = () => {
+  const startDrawing = () => {
     setDrawing(true);
   };
 
-  const handleMouseUp = () => {
+  const stopDrawing = () => {
     setDrawing(false);
   };
 
-  const handleMouseOver = (e) => {
-    if (drawing) {
-      e.target.style.backgroundColor = selectedColor;
+  const draw = (e) => {
+    // Prevent the default touch behavior like scrolling
+    e.preventDefault();
+    if (!drawing) return;
+
+    let target;
+    // Check if it's a touch event
+    if (e.touches) {
+      target = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    } else {
+      target = e.target;
+    }
+
+    if (target.classList.contains('drawing-cell')) {
+      target.style.backgroundColor = selectedColor;
     }
   };
 
@@ -40,21 +52,26 @@ const DrawingApp = () => {
             onClick={() => handleColorChange(color)}
           ></div>
         ))}
-
       </div>
       <button className="clear-button" onClick={clearDrawing}>
         Clear Drawing
       </button>
-      <div className="drawing-area" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+      <div className="drawing-area" 
+           onMouseDown={startDrawing} 
+           onMouseUp={stopDrawing} 
+           onMouseLeave={stopDrawing} // Add this to handle the cursor leaving the drawing area
+           onMouseOver={draw} // Keep for desktop
+           onTouchStart={startDrawing}
+           onTouchMove={draw}
+           onTouchEnd={stopDrawing}>
         {Array.from({ length: 400 }, (_, index) => (
           <div
             key={index}
             className="drawing-cell"
-            onMouseOver={handleMouseOver}
+            // Remove onMouseOver here as it's handled in the drawing-area
           ></div>
         ))}
       </div>
-
     </div>
   );
 };
