@@ -18,22 +18,22 @@ function shuffle(array) {
 
 function Cards() {
   const initialItems = [
-    { id: 1, img: '/img/html.png', stat: '' },
-    { id: 1, img: '/img/html.png', stat: '' },
-    { id: 2, img: '/img/css.png', stat: '' },
-    { id: 2, img: '/img/css.png', stat: '' },
-    { id: 3, img: '/img/js.png', stat: '' },
-    { id: 3, img: '/img/js.png', stat: '' },
-    { id: 4, img: '/img/scss.png', stat: '' },
-    { id: 4, img: '/img/scss.png', stat: '' },
-    { id: 5, img: '/img/react.png', stat: '' },
-    { id: 5, img: '/img/react.png', stat: '' },
-    { id: 6, img: '/img/vue.png', stat: '' },
-    { id: 6, img: '/img/vue.png', stat: '' },
-    { id: 7, img: '/img/angular.png', stat: '' },
-    { id: 7, img: '/img/angular.png', stat: '' },
-    { id: 8, img: '/img/nodejs.png', stat: '' },
-    { id: 8, img: '/img/nodejs.png', stat: '' },
+    { id: 1, img: '/img/circle.png', stat: '' },
+    { id: 1, img: '/img/circle.png', stat: '' },
+    { id: 2, img: '/img/diamond.png', stat: '' },
+    { id: 2, img: '/img/diamond.png', stat: '' },
+    { id: 3, img: '/img/heart.png', stat: '' },
+    { id: 3, img: '/img/heart.png', stat: '' },
+    { id: 4, img: '/img/purple.png', stat: '' },
+    { id: 4, img: '/img/purple.png', stat: '' },
+    { id: 5, img: '/img/square.png', stat: '' },
+    { id: 5, img: '/img/square.png', stat: '' },
+    { id: 6, img: '/img/star.png', stat: '' },
+    { id: 6, img: '/img/star.png', stat: '' },
+    { id: 7, img: '/img/triangle.png', stat: '' },
+    { id: 7, img: '/img/triangle.png', stat: '' },
+    { id: 8, img: '/img/vue.png', stat: '' },
+    { id: 8, img: '/img/vue.png', stat: '' },
   ];
 
   const [items, setItems] = useState(shuffle([...initialItems])); // Initial shuffle
