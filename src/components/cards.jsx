@@ -81,10 +81,6 @@ function Cards() {
         {items.map((item, index) => (
           <Card key={index} item={item} id={index} handleClick={handleClick} />
         ))}
-        
-        <button className="restart-button" onClick={restartGame}>Restart</button>
-        
-    
       </div>
     </div>
   );

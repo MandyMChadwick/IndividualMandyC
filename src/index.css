@@ -157,3 +157,36 @@ h2 {  text-align: center;
   transform: scale(1.05); /* Slightly enlarges the image on hover */
   cursor: pointer; /* Changes the cursor to indicate clickable items */
 }
+/* Centering the container that holds the grid */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this as needed */
+  width: 100vw; /* Adjust this as needed */
+}
+
+/* Styling for the game grid container to maintain a 4x4 layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  /* Set a max-width to fit all cards without squishing. Adjust based on card size */
+  max-width: 600px; /* Example; adjust based on your card size and padding */
+  margin: auto; /* This centers the grid in the flex container */
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* Optional: Adjust gap or padding here if you want to tighten the layout on smaller screens */
+  }
+}
+/* For iPhone SE 1st and 2nd Generation in portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    /* Adjustments specific to iPhone SE */
+    /* Example: Adjust to 2 columns for smaller screen */
+    gap: 0.1em; /* Reduce gap size */
+    max-width: 200px; /* Adjust max width to fit the device's screen */
+  }
+}
