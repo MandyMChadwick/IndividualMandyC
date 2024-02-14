@@ -17,9 +17,9 @@ function App() {
       <div >
       
         <div className="content">
-          <div className="title-container">
+         
             <h1>Fun With Mom and Dad</h1>
-          </div>
+          
           <Routes>
             <Route path="/" element={<HomePage/>} />
             <Route path="/memoryGame" element={<Cards />} />

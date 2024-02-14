@@ -75,7 +75,8 @@ function Cards() {
 
   return (
     <div>
-      <h1>Memory Game</h1>
+      <h2>Memory Game</h2>
+      <button className="restart-button" onClick={restartGame}>Restart</button>
       <div className="container">
         {items.map((item, index) => (
           <Card key={index} item={item} id={index} handleClick={handleClick} />

@@ -63,6 +63,9 @@ h1 {
   margin-bottom: 1em;
   color: rgb(96, 95, 95);
 }
+h2 {  text-align: center;
+  margin-bottom: 1em;
+  color: rgb(96, 95, 95);}
 
 .container {
   display: grid;

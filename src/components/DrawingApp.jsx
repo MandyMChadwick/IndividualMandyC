@@ -40,7 +40,11 @@ const DrawingApp = () => {
             onClick={() => handleColorChange(color)}
           ></div>
         ))}
+
       </div>
+      <button className="clear-button" onClick={clearDrawing}>
+        Clear Drawing
+      </button>
       <div className="drawing-area" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
         {Array.from({ length: 400 }, (_, index) => (
           <div
@@ -50,9 +54,7 @@ const DrawingApp = () => {
           ></div>
         ))}
       </div>
-      <button className="clear-button" onClick={clearDrawing}>
-        Clear Drawing
-      </button>
+
     </div>
   );
 };
