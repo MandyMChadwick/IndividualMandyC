@@ -48,7 +48,7 @@ body {
   /* Takes up 50% of the width of its parent */
   min-height: 100vh; /* Ensures it's at least as tall as the viewport */
   /* Centers the div horizontally */
-  min-width:100vh;
+  min-width:60vh;
   box-sizing: border-box; /* Includes padding and border in the element's size */
 }
 
@@ -152,6 +152,14 @@ h2 {  text-align: center;
   height: auto; /* Keeps the aspect ratio of the images */
   transition: transform 0.2s; /* Smooth transition for hover effect */
 }
+/* Adjustments for small screens */
+@media (max-width: 480px) {
+  .home-image {
+    max-width: 75px; /* Adjusts max width for small screens */
+    flex-direction: column;
+  }
+}
+
 
 .home-image:hover {
   transform: scale(1.05); /* Slightly enlarges the image on hover */
@@ -188,5 +196,10 @@ h2 {  text-align: center;
     /* Example: Adjust to 2 columns for smaller screen */
     gap: 0.1em; /* Reduce gap size */
     max-width: 200px; /* Adjust max width to fit the device's screen */
+  }
+}
+@media (max-width: 300px) {
+  .home-image {
+    max-width: 75px; /* Adjusts max width for small screens */
   }
 }
