@@ -19,7 +19,7 @@ const HomePage = () => {
        
       </Link>
       <Link to="/game3">
-        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRhoExaCv6IvuVsUqzr0Fkwi5whwrN-mPSuEx2YmaDyPl0777IzdhF6cDiW8zB_frPZ79yszCrMVwbWIEEnk2P2fHE-=s2560" alt="Drawing" className="home-image" alt="Nursery Rhymes" className="home-image" />
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRhoExaCv6IvuVsUqzr0Fkwi5whwrN-mPSuEx2YmaDyPl0777IzdhF6cDiW8zB_frPZ79yszCrMVwbWIEEnk2P2fHE-=s2560" alt="Drawing" className="home-image" />
       </Link>
     </div>
   );
