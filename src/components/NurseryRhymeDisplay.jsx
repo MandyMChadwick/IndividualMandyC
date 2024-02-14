@@ -14,7 +14,7 @@ const NurseryRhymeDisplay = () => {
 
   return (
     <div id="nursery-container">
-      <h2 id="rhyme-title">Nursery Rhyme Display</h2>
+      <h2 id="rhyme-title">Nursery Rhymes</h2>
       <button id="random-button" onClick={getRandomRhyme}>
         Get A Rhyme
       </button>
