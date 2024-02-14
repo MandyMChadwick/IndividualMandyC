@@ -18,16 +18,14 @@ function App() {
       
         <div className="content">
           <div className="title-container">
-            
-            <br></br>
             <h1>Fun With Mom and Dad</h1>
           </div>
           <Routes>
             <Route path="/" element={<HomePage/>} />
             <Route path="/memoryGame" element={<Cards />} />
-            <Route path="/game1" element={<JokeDisplay/>} />
-            <Route path="/game2" element={<DrawingApp />} />
-            <Route path="/game3" element={<NurseryRhymeDisplay/>}/>
+            <Route path="/jokes" element={<JokeDisplay/>} />
+            <Route path="/draw" element={<DrawingApp />} />
+            <Route path="/rhymes" element={<NurseryRhymeDisplay/>}/>
           </Routes>
         </div>
       </div>

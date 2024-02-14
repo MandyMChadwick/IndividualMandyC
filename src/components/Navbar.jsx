@@ -22,13 +22,13 @@ export const Navbar = () => {
           <NavLink to="/memoryGame">Memory Game</NavLink>
         </li>
         <li>
-          <NavLink to="/game1">Dad Jokes</NavLink>
+          <NavLink to="/jokes">Dad Jokes</NavLink>
         </li>
         <li>
-          <NavLink to="/game2">Drawing</NavLink>
+          <NavLink to="/draw">Drawing</NavLink>
         </li>
         <li>
-          <NavLink to="/game3">Nursery Rhymnes</NavLink>
+          <NavLink to="/rhymes">Nursery Rhymnes</NavLink>
         </li>
       </ul>
     </nav>
