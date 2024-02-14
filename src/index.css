@@ -148,7 +148,7 @@ h2 {  text-align: center;
 }
 
 .home-image {
-  max-width: 200px; /* Controls the size of the images */
+  max-width: 75px; /* Controls the size of the images */
   height: auto; /* Keeps the aspect ratio of the images */
   transition: transform 0.2s; /* Smooth transition for hover effect */
 }

@@ -6,6 +6,7 @@ import HomePage from './components/home';
 import NurseryRhymeDisplay from './components/NurseryRhymeDisplay';
 import DrawingApp from './components/DrawingApp';
 import JokeDisplay from './components/JokeDisplay';
+import SplashPage from './components/splash';
 
 import './components/Navbar.css';
 
@@ -14,14 +15,14 @@ function App() {
     
     <Router>
         <Navbar />
+        
       <div >
       
         <div className="content">
-         
-            <h1>Fun With Mom and Dad</h1>
-          
+ 
+            <HomePage/>
           <Routes>
-            <Route path="/" element={<HomePage/>} />
+            <Route path="/" element={<SplashPage/>} />
             <Route path="/memoryGame" element={<Cards />} />
             <Route path="/jokes" element={<JokeDisplay/>} />
             <Route path="/draw" element={<DrawingApp />} />
